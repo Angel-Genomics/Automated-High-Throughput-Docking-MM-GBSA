@@ -1,0 +1,10 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+rec = loadpdb ../../receptor_flex_updated/8PQ9_nilotinib_rec.pdb
+lig = loadmol2 lig_bcc.mol2
+loadamberparams lig.frcmod
+comp = combine {rec lig}
+saveamberparm rec rec.prmtop rec.inpcrd
+saveamberparm lig lig.prmtop lig.inpcrd
+saveamberparm comp comp.prmtop comp.inpcrd
+quit

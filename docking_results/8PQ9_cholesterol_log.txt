@@ -1,0 +1,52 @@
+Uni-Dock v1.2.0
+
+If you used Uni-Dock in your work, please cite:               
+ 
+Yu, Y., Cai, C., Wang, J., Bo, Z., Zhu, Z., & Zheng, H. (2023). 
+Uni-Dock: GPU-Accelerated Docking Enables Ultralarge Virtual Screening. 
+Journal of Chemical Theory and Computation.                    
+https://doi.org/10.1021/acs.jctc.2c01145                       
+
+Tang, S., Chen, R., Lin, M., Lin, Q., Zhu, Y., Ding, J., ... & Wu, J. (2022). 
+Accelerating autodock vina with gpus. Molecules, 27(9), 3041. 
+DOI 10.3390/molecules27093041                                 
+
+J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  
+AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      
+Field, and Python Bindings, J. Chem. Inf. Model. (2021)       
+DOI 10.1021/acs.jcim.1c00203                                  
+
+O. Trott, A. J. Olson,                                        
+AutoDock Vina: improving the speed and accuracy of docking    
+with a new scoring function, efficient optimization and        
+multithreading, J. Comp. Chem. (2010)                         
+DOI 10.1002/jcc.21334                                         
+
+Please refer to https://github.com/dptech-corp/Uni-Dock/ for  
+bug reporting, license agreements, and more information.      
+
+Scoring function : vina
+Rigid receptor: clean_proteins/8PQ9_rigid.pdbqt
+Flex receptor: clean_proteins/8PQ9_flex.pdbqt
+Ligand: ligand/cholesterol.pdbqt
+Grid center: X 12.173 Y 3.084 Z -12.031
+Grid size  : X 25.479 Y 32.656 Z 25.961
+Grid space : 0.375
+Exhaustiveness: 64
+CPU: 10
+Verbosity: 1
+
+Computing Vina grid ... done.
+Performing docking (random seed: 12345) ... 
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -9.545          0          0
+   2       -9.401      2.103      3.681
+   3       -9.067      3.132       5.75
+   4       -8.969      8.354      12.27
+   5       -8.856       3.67      5.267
+   6        -8.79      1.594      3.415
+   7       -8.745      9.935      13.99
+   8       -8.698      2.878      8.388
+   9        -8.55      3.523      5.254

@@ -1,0 +1,17 @@
+receptor = clean_proteins/8PQ9_rigid.pdbqt
+flex = clean_proteins/8PQ9_flex.pdbqt
+ligand = ligand/nilotinib.pdbqt
+
+center_x = 12.173
+center_y = 3.084
+center_z = -12.031
+
+size_x = 25.479
+size_y = 32.656
+size_z = 25.961
+
+cpu = 10
+exhaustiveness = 64
+num_modes = 9
+energy_range = 3
+seed = 12345
